@@ -3,10 +3,8 @@
 
 P-Buster is a Python tool designed to **Decrypt** and **Extract** local saved passwords on Windows.
 
-Originally, I got a Raspberry Pi Pico to use it as a Bad-USB. I wrote a few light scripts for fun and used some password-stealing scripts I found on GitHub. 
-However, these scripts were either barely functional or relied on browser vulnerabilities that had since been patched. So, I decided to develop my own.
-
-**So there is P-Buster.**
+Originally, I got a Raspberry Pi Pico to use it as a Bad-USB. I wrote a few light scripts for fun and this his one of them.
+P-Buster for Password-Buster is a python script use to steal browser saved password.
 
 ## Script Development
 **How does this work ?**
