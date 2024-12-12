@@ -45,6 +45,8 @@ Once the passwords are decrypted, depending on the intended use, it can be helpf
    ```
    pip install pycryptodome pypiwin32 requests
    ```
+3. ```python p-buster.py```
+
 ## Usability
 For extract data put your own discord webhook.
 ```
