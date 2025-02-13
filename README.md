@@ -1,7 +1,7 @@
 
 # 🔒🔑 BPS - Browser Password Stealer
 
-BPS is a Python tool designed to **Decrypt** and **Extract** local saved passwords on Windows.
+BPS is a Python script use to **Decrypt** and **Extract** local saved passwords on Windows.
 
 Originally, I got a Raspberry Pi Pico to use it as a Bad-USB. I wrote a few light scripts for fun and this his one of them.
 BPS is a python script use to steal browser saved password.
